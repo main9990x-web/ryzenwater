@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "ryzenwater",
+  "version": "${version}",
+  "name": "RyzenWater",
+  "description": "Красивая волнистая водичка под игроком (только клиент). Клавиша K — вкл/выкл, настройки через Mod Menu.",
+  "authors": ["Ryzen"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.ryzen.water.RyzenWaterClient"],
+    "modmenu": ["dev.ryzen.water.RyzenWaterModMenu"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
